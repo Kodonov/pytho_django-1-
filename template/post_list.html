@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<url>
+    {% for i in post %}
+    <li class="'post">
+        <img class="post-image" src="{{ i.image.url }}" alt="">
+        <h2><a href="{{ i.pk }}/">{{ i.tittle }}</a>></h2>
+        <p class="post-description">{{ i.description }}</p>
+        <p class=post-text">{{ i.text }}</p>
+        <span class="post-date">{{ i.date_added }}</span>
+    </li>
+    {% endfor %}
+</ul>
+</url>
+</body>
+</html>
